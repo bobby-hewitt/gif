@@ -1,0 +1,101 @@
+.scoresContianer{
+	position:absolute;
+	top:50%;
+	left:50%;
+	display: flex;
+	align-items:flex-end;
+	justify-content: center;
+	// transform:translate(-50%, -75%) rotate(-1deg) scale(1);
+	-webkit-animation-name: show; /* Safari 4.0 - 8.0 */
+		-webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+		animation-name: show;
+		animation-duration: 2s;
+		animation-delay: 2s;
+		animation-fill-mode:forwards;
+	transform:scale(0)translate(-200%, -105%);
+		// animation-timing: forwards;
+	.podiumPosition{
+		width:200px;
+		height:200px;
+		
+		display: flex;
+		align-items:center;
+		justify-content: center;
+		flex-direction: column;
+		
+		// opacity:0;
+		*{
+			color:#fff!important;
+		}
+		&.show{
+			opacity:1;
+		}
+	}
+	.podiumPosition1{
+		border-radius:10px 10px 0 0;
+		box-shadow:0 0px 50px #ffd70077;
+		
+		width:350px;
+		height:350px;
+		background:gold;
+		
+		left:50%;
+		
+		.title{
+			font-size:70px!important;
+		}
+	}
+	.position{
+
+		
+		opacity: 0;
+		left:0;
+		width:100%;
+		text-align: center;
+		color:white;
+	}
+	.podiumPosition0{
+		z-index: 1;
+		height:220px;
+		border-radius:10px 0px 0 10px;
+		background:silver;
+		// box-shadow:0 0 50px #C0C0C0ff;
+		
+		left:50%;
+		
+		.title{
+			font-size:35px!important;
+		}
+	}
+	.podiumPosition2{
+		z-index: 1;
+		border-radius:0px 10px 10px 0;
+		
+		
+		background:#b08d57;
+		.title{
+			font-size:35px!important;
+		}
+	}
+	&.show0{
+		.podiumPosition2{
+			opacity:1;
+		}
+	}
+
+}
+
+
+@keyframes show {
+  0% {transform:scale(0)translate(-200%, -105%)}
+  // 10% {transform: rotate(360deg)scale(0.1)}
+  // 20% {transform: rotate(720deg)scale(0.2)}
+  // 30% {transform: rotate(1080deg)scale(0.3)}
+  // 40% {transform: rotate(1540deg)scale(0.4)}
+  // 50% {transform: rotate(1800deg)scale(0.5)}
+  // 60% {transform: rotate(2160deg)scale(0.6)}
+  // 70% {transform: rotate(2520deg)scale(0.7)}
+  // 80% {transform: rotate(2880deg)scale(0.8)}
+  // 90% {transform: rotate(3240deg)scale(0.9)}
+  100% {transform: scale(1)translate(-50%, -75%)}
+}

@@ -1,0 +1,171 @@
+$height: 500px;
+$width:900px;
+
+.backgroundContainer{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	overflow: hidden;
+	z-index: -1;
+	
+	.backgroundGifContainer{
+		// min-width: 800px;
+		padding: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position:absolute;
+		top:50%;
+		left:50%;
+		// width:1000px;
+		transform:translate(-50%, -50%) rotate(-0.5deg);
+		transform:translate(-50%, -65%) rotate(-0.5deg) scale(1);
+		margin-top:0px;
+		background:rgb(157,160,198);
+		background:rgb(4,1,37);
+		box-shadow:0 0 50px rgba(255,255,255,0.5);
+		overflow: hidden;
+		transition:all 0.6s ease;
+		&.offsetTop{
+			transform:translate(-50%, -65%) rotate(-0.5deg) scale(1);
+		}
+		&.hidden{
+			// transform:translate(-50%, -50%)rotate(-0.5deg)scale(0);
+		}
+		.topJaunt{
+			position: absolute;
+			top:-5px;
+			left:0px;
+			width: 0; 
+			height: 0; 
+			border-right: $width+40 solid transparent;  
+			border-bottom:5px solid white;
+		}
+		.bottomJaunt{
+			position: absolute;
+			bottom:-10px;
+			left:0px;
+			width: 0; 
+			height: 0; 
+			border-right: $width+40 solid transparent;  
+			border-top:10px solid white;
+		}
+		.rightJaunt{
+			position: absolute;
+			top:0px;
+			right:-10px;
+			width: 0; 
+			height: 0; 
+			border-top: $height+40 solid transparent;  
+			border-left:10px solid white;;
+		}
+		.leftInnerJaunt{
+			position: absolute;
+			top:-10px;
+			left:20px;
+			width: 0; 
+			height: 0; 
+			border-top: $height + 60 solid transparent;  
+			border-left:15px solid white;;
+		}
+		.topInnerJaunt{
+			position: absolute;
+			top:20px;
+			left:0px;
+			width: 0; 
+			height: 0; 
+			border-right: $width + 40 solid transparent;  
+			border-top:10px solid white;
+		}
+		
+		.backgroundGifInner{
+			position:relative;
+			// width:100%;
+			height:100%;
+			padding:20px;
+			margin:0;
+			
+			background:white;
+		}
+		.mainGif, img{
+			// margin:-10px;
+		// box-shadow: 0 0 50px rgba(255,255,255,0.4);	
+			background-size: contain;
+			background-position:center;
+			// background-repeat:no-repeat;
+			// height:100%;
+			height: $height ;
+			width:$width ;
+			// margin:auto;
+			padding:0!important;
+			&.knockedBack{
+				opacity:0.5!important;
+			}
+		}
+		// .mainGifInnerContainer{
+		// 	width:100%;
+		// 	height:100%;
+		// 	padding:30px;
+		// 	background:white;
+		// 	box-sizing:border-box;;
+		// }
+		.grad{
+
+			position: absolute;
+			top:0;
+			left:0;
+			// background:rgba(0,0,0,0.2);
+			// background:radial-gradient(#10101000,#101010ff);
+			width:100%;
+			height:100%;
+		}
+		.cover{
+			position:absolute;
+			top:0;
+			left:0;
+			transition:all 0.3s ease;
+			width:100%;
+			height:100%;
+			background:#101010;
+			opacity:0;
+			&.covered{
+				// opacity: 1;
+			}
+		}
+		&.shrink{
+			top:-100px;
+			
+			transform:translate(-50%, 0) rotate(-0.5deg) scale(0.5);
+		}
+
+	}
+	.instructionsContainer{
+		position:absolute;
+		top:0;
+		left:0;
+		bottom:0;
+		right:0;
+		display: flex;
+		align-items:center;
+		justify-content: center;
+		flex-direction: column;
+		p{
+			font-size:40px;
+		}
+		.title{
+			font-size:100px;
+		}
+
+		*{
+
+			color:rgb(4,1,37);;
+		}
+	}
+}
+
+@keyframes spin {
+  0% {transform: rotate(0deg)}
+  100% {transform: rotate(360deg)}
+}

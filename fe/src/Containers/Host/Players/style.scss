@@ -1,0 +1,80 @@
+.playersOuterContainer{
+	position: fixed;
+		bottom:0px;
+		left:0;
+		right:0;
+		display: flex;
+		align-items:flex-end;
+		// opacity:0;
+		z-index: 1;
+		img{
+			width:12.5%;
+		}
+	.playersContainer{
+		position:absolute;
+		bottom:0;
+		left:0;
+		right:0;
+		display: flex;
+		width:100%;
+		flex-direction: row;
+		// height:400px;
+		align-items: flex-end;
+		// background:red;
+		justify-content: center;
+		.playersBackContainer{
+			
+		}
+		.playerContainer{
+			width:25%;
+			max-width:250px;
+			margin:0!important;
+			// min-height:300px;
+
+			// display: inline-block;
+			position:relative;
+			transform:translateY(100%);
+			margin:0 40px!important;
+			transition:all 0.3s ease;
+			&.isVisible{
+				transform:translateY(0);
+			}
+			img{
+				width:100%;
+			}
+			.userImage{
+				transform:translateY(-50%);
+				width:80%;
+				left:10%;
+
+			}
+			.title{
+				line-height: 1em; 
+				z-index: 1;
+				position: absolute;
+				top:23%;
+				left:0;
+				// color:#101010;
+				text-align: center!important;
+				width:100%;
+				// margin-top:-190px;
+			}
+		}
+		
+	}
+	.playersBackContainer{
+		width:100%;
+		&.isEven{
+			margin-left:-145px;
+		}
+			// margin-left:-12.5%;
+			// transform:translateX(12.5%);
+			.title{
+
+				top:70%!important;
+				// bottom:15%!important;
+				
+				// margin-top:-190px;
+			}
+		}
+}

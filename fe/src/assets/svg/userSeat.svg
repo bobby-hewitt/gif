@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="187px" height="139px" viewBox="0 0 187 139" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>Group-2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="187" height="139"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2">
+            <g id="Group">
+                <g id="Rectangle-Clipped">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="path-2"></g>
+                    <g id="Rectangle" mask="url(#mask-2)" fill-rule="nonzero">
+                        <polygon id="Path" fill="#591010" points="-1.13686838e-13 28 33.5660549 4.93266764 138.830051 0.292982797 172.177913 8.64941689 187 28 187 139 -1.13686838e-13 139"></polygon>
+                        <polygon id="Path" stroke="#000000" stroke-width="8" fill="#280508" points="25 33.6485304 25 150 169 150 169 34.1993105 131.348619 21 46.4625616 21"></polygon>
+                        <polygon id="Path" fill-opacity="0.2" fill="#FFFFFF" points="0.0534376705 27.9287816 33.7034611 4.94783525 41.6324975 4.6200106"></polygon>
+                        <polygon id="Path" fill-opacity="0.2" fill="#FFFFFF" points="168.62242 9.96189381 149.061137 2.87752365 172.008719 8.71143684"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

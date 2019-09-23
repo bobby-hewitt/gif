@@ -1,0 +1,41 @@
+.backgroundContainer, .playerBackgroundContainer{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100vw;
+	height:100vh;
+	overflow: hidden;
+	z-index: -1;
+	background:rgb(4,1,37);
+	padding:0;
+	margin:0;
+	.anglesContainer{
+		height:100vh;
+		width:100vw;
+
+		-webkit-animation-name: spin; /* Safari 4.0 - 8.0 */
+		-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+		animation-name: spin;
+		animation-duration: 180s;
+		animation-iteration-count:infinite;
+		animation-timing-function: linear;
+		position:relative;
+		.testTriangle{
+			transform-origin: 0px 0px;
+			position:absolute;
+			top:50%;
+			left:50%; 
+			 width: 0px; 
+			height: 0px; 
+			border-top: 40000px solid transparent;
+			border-bottom: 0px solid transparent; 
+			// border-left:300vw solid blue;
+			border-right:40000px solid rgba(255,255,255,0.1);
+		}
+	}
+}
+
+@keyframes spin {
+  0% {transform: rotate(0deg)}
+  100% {transform: rotate(360deg)}
+}

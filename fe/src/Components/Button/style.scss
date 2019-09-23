@@ -1,0 +1,21 @@
+.buttonContainer{
+	width:100%;
+	margin-top:20px;
+	box-sizing: border-box;
+	.buttonInner{
+		border-radius:4px;
+		background:red;
+		min-height:50px;
+		display: flex;
+		padding:0 20px;
+		box-sizing:border-box;
+		align-items: center;
+		background:rgb(4,1,27);
+		box-shadow: 0 0 20px rgba(0,0,0,0.5);
+		justify-content: center;	
+		*{
+			color:#fff;
+			text-align: center;
+		}
+	}
+}
