@@ -13,8 +13,8 @@ function PlayerResponses(props) {
 			setIsVisible([true, false])
 			timeout = setTimeout(() => {
 				setIsVisible([true, true])
-			},process.env.NODE_ENV==='development' ? 0 : 500)
-		},process.env.NODE_ENV==='development' ? 0 : 500)
+			}, 500)
+		}, 500)
 		return () => (
 			clearTimeout(timeout)
 		)

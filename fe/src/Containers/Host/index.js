@@ -143,7 +143,7 @@ function Host() {
 						index: state.showVotes.index + 1,
 						showScore:false,
 					})
-				}, process.env.NODE_ENV === 'development' ? 0 :500)
+				}, 500)
 			} else if (state.route === 'player-response' && !state.showVotes.showScore){
 				setTimeout(() => {
 				state.setShowVotes({
@@ -151,7 +151,7 @@ function Host() {
 					index: state.showVotes.index + 1,
 					showScore: true
 				})
-				}, process.env.NODE_ENV === 'development' ? 0 :1000)
+				}, 1000)
 			} else {
 				setTimeout(() => {
 					state.setShowVotes({
@@ -160,7 +160,7 @@ function Host() {
 						showScore: false
 					})
 					voteOnNextGif()
-				}, process.env.NODE_ENV === 'development' ? 0 :2000)
+				}, 2000)
 			}
 		}		
 	},[state.showVotes])

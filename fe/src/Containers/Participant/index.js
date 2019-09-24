@@ -11,7 +11,7 @@ import openSocket from 'socket.io-client';
 import { Background } from 'Components'
 import './style.scss'
 
-const  socket = openSocket('http://172.20.10.3:9000');
+const  socket = openSocket('http://localhost:9000');
 
 
 function Player(props) {
